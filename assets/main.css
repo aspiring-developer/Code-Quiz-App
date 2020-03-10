@@ -1,0 +1,52 @@
+.main-wrapper-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 245, 241);
+  padding: 2rem;
+  width: 90%;
+  height: auto;
+  flex-direction: column;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+
+h1 {
+font-weight: bold;
+color: #0c5875;
+
+}
+.top-column-2 .timeAvailable {
+  margin-top: 2rem;
+}
+.timerCounter {
+        font-size: 5rem;
+    color: purple;
+    }
+    #startButton {
+      padding: 1rem 2rem;
+     border-radius: 30px;
+     text-transform: uppercase;
+     outline: none;
+     margin-bottom: 1rem;
+    }
+.scoreCounter {
+     font-size: 5rem;
+    color: #1c47ad;
+}
+#questionField {
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+color: #0c5875;
+}
+hr {
+  border-top: 1px solid #999;
+  margin-top:1rem;
+}
+.bottom-row {
+  display: flex;
+  font-size: .8rem;
+  
+}
