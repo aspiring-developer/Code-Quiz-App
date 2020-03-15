@@ -57,20 +57,19 @@ var allQuestions = [   {
 
 var lastQuestion = allQuestions.length -1;
 var currentQuestion = 0;
-var counterDisplay = 75;
-// var timeForQuestions = 75;
-// var timeForEachQuestion = 15;  // 75 seconds / 5 question
+var counterDisplay = 15;
 var TIMER;
 var actualScore = 0;
 
+
   // processing the question
-function processQuestion () {
+function processQuestion() {
 var question = allQuestions[currentQuestion];
-questionFieldEl.textContent = allQuestions.questionToAsk;
-answerChoiceA.textContent = allQuestions.answerChoiceA;
-answerChoiceB.textContent = allQuestions.answerChoiceB;
-answerChoiceC.textContent = allQuestions.answerChoiceC;
-answerChoiceD.textContent = allQuestions.answerChoiceD;
+questionFieldEl.textContent = question.questionToAsk;
+answerChoiceA.textContent = question.answerChoiceA;
+answerChoiceB.textContent = question.answerChoiceB;
+answerChoiceC.textContent = question.answerChoiceC;
+answerChoiceD.textContent = question.answerChoiceD;
 timerCounterEl.textContent = counterDisplay;
   }
 
@@ -78,29 +77,22 @@ startButtonEl.addEventListener("click", startQuiz);
 
 function startQuiz(){  
 processQuestion();
-updateCounter();
 TIMER = setInterval(updateCounter, 1000);
 currentQuestion++;
-counterDisplay--;
  }
-
 
 // updating the counter
 function updateCounter() {
-  if (counterDisplay == 75) {
+  console.log("this is being called.");
     counterDisplay--;
-  }
-  else{
-    counterDisplay = 0;
-  }
-  if(processQuestion < lastQuestion){
-    processQuestion++;
-    processQuestion();
-  
-  }else{
+    timerCounterEl.textContent = counterDisplay;
+      if(counterDisplay <= 0){
+         processQuestion();
     clearInterval(TIMER);
     updateScore();
+
   }
+
 }
 
 function checkAnswer(answer) {
@@ -114,7 +106,7 @@ if(processQuestion < lastQuestion){
 
 
 }else{
-  clearInterval(timer);
+  clearInterval(TIMER);
   updateScore();
 }
 }

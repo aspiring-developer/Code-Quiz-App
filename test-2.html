@@ -12,8 +12,8 @@
   <script src="https://kit.fontawesome.com/15bf670575.js" crossorigin="anonymous"></script>
 
   <!-- ########## STYLE SHEETS - CSS ########## -->
-  <link rel="stylesheet" href="assets/main.css">
-  <link rel="stylesheet" href="assets/reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="reset.css">
   <title> Web APIs: Code Quiz </title>
 </head>
 
@@ -29,11 +29,11 @@
       <div class="row top-row-2">
         <div class="col top-column-2">
           <div class="timerWrapper">
-           <p>Time Available</p>
+           <!-- <p>Time Available: 15 seconds for each question.</p> -->
            <div class="timerCounter">0</div> 
            <button type="button" id="startButton" class="bg-primary text-white"> Start quiz </button>
          </div>
-<div id="questionField"> ??? The question appears here. ??? </div>
+<div id="questionField"> You have 15 seconds to answer each question. </div>
 <div id="answerOptions"> 
   <div class="answerChoice" id="A" onclick="checkAnswer('A')"> </div>
   <div class="answerChoice" id="B" onclick="checkAnswer('B')"> </div>
@@ -41,7 +41,7 @@
   <div class="answerChoice" id="D" onclick="checkAnswer('D')"> </div>
  </div>
 <div class="scoreCounter">0</div> 
-<p>Total Score</p>
+<p>Total Score will be displayed after the quiz is over or there is no time left.</p>
         </div> <!-- .top-column-2 ends -->
       </div> <!-- .top-row-2 ends -->
  <div class="row bottom-row">
@@ -57,7 +57,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="assets/test-2.js"></script>
+  <script src="test-2.js"></script>
 </body>
 
 </html>
