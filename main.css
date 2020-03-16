@@ -1,80 +1,71 @@
 .main-wrapper-container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(235, 245, 241);
-  padding: 2rem;
-  width: 90%;
-  height: auto;
-  flex-direction: column;
-  margin-top: 2rem;
-  text-align: center;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(235, 245, 241);
+	padding: 2rem;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+	margin-top: 2rem;
+	text-align: center;
 }
-
 
 h1 {
-font-weight: bold;
-color: #0c5875;
-
+	font-weight: bold;
+	color: #0c5875;
 }
 .top-column-2 .timeAvailable {
-  margin-top: 2rem;
+	margin-top: 2rem;
 }
 #questionField {
-  margin: 1.5rem 0 .5rem 0;
+	margin: 1.5rem 0 0.5rem 0;
 }
 .timerCounter {
-        font-size: 5rem;
-    color: purple;
-    }
-    #startButton {
-      padding: 1rem 2rem;
-     border-radius: 30px;
-     text-transform: uppercase;
-     outline: none;
-     margin-bottom: 1rem;
-     margin: 0 auto;
-     text-align: center;
-    }
-    .question-btn {
-      padding: 1rem 2rem;
-     border-radius: 30px;
-     text-transform: uppercase;
-     outline: none;
-     margin-bottom: 1rem;
-     margin: 0 auto;
-     text-align: center;
-    }
-    #questionOne, #questionTwo, #questionThree, #questionFour, #questionFive {
-      display: none;
-    }
-    
-    .answerChoiceOneA, .answerChoiceOneB,.answerChoiceOneC,.answerChoiceOneD {
-      padding: 1rem;
-      display: none;
+	font-size: 5rem;
+	color: purple;
+}
+#startButton {
+	padding: 1rem 2rem;
+	border-radius: 30px;
+	text-transform: uppercase;
+	outline: none;
+	margin-bottom: 1rem;
+  margin: 0 auto;
+  margin-bottom: .5rem;
+	text-align: center;
+}
+.next-button  {
+	padding: 1rem 2rem;
+	border-radius: 30px;
+	text-transform: uppercase;
+	outline: none;
+	margin-bottom: 1rem;
+	margin: 0 auto;
+  margin-bottom: .5rem;
+	text-align: center;
+	display: none;
+}
+.answerButton {
+  padding: 1rem;
+margin: 1rem;
 
-    }
-    /* #answerOptionsOne {
-      display: none;
-    } */
-
-.scoreCounter {
-     font-size: 5rem;
-    color: #1c47ad;
-    display: none;
+}
+#scoreCounter {
+	font-size: 5rem;
+	color: #1c47ad;
 }
 #questionField {
-  font-size: 1.5rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-color: #0c5875;
+	font-size: 1.5rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #0c5875;
 }
 hr {
-  border-top: 1px solid #999;
-  margin-top:1rem;
+	border-top: 1px solid #999;
+	margin-top: 1rem;
 }
 .bottom-row {
-  display: flex;
-  font-size: .8rem;
-  
+	display: flex;
+	font-size: 0.8rem;
 }
