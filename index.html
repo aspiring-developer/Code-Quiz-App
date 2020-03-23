@@ -32,29 +32,23 @@
           <p>Time Available</p>
           <div class="timerCounter">0</div>
         </div>
-        <div id="questionField"> Click Start Quiz button to start the quiz. </div>
-        <div id="answerButton"> 
-          <button type="button" class="answerButton btn-info"
-            id="answerChoiceOneA">
-          </button>
-          <button type="button" class="answerButton btn-info"
-           id="answerChoiceOneB">
-          </button>
-          <button type="button" class="answerButton btn-info" id="answerChoiceOneC">
-          </button>
-          <button type="button" class="answerButton btn-info" id="answerChoiceOneD">
-          </button>
-        
-  </div> <!-- #answerButton -->
-        <div id="answerField"></div>
-        <button type="button" class="start-button btn-primary" id="startButton"> Start Quiz </button> 
-        <button type="button" class="next-button btn-warning" id="nextButtonOne"> Go To Question #2 </button> 
-        <button type="button" class="next-button btn-warning" id="nextButtonTwo"> Go To Question #3 </button> 
-        <button type="button" class="next-button btn-warning" id="nextButtonThree"> Go To Question #4 </button> 
-        <button type="button" class="next-button btn-warning" id="nextButtonFour"> Go To Question #5 </button> 
-        <button type="button" class="next-button btn-warning" id="nextButtonFive"> RESET QUIZ </button>
-        
-  <div id="scoreCounter"> 0 </div>
+        <div id="questionWrapper">
+          <div id="questionField"> Click Start Quiz button to start the quiz. </div>
+          <div id="answerButtons">
+            <button class="eachButton btn-info" id="eachButton"> Choice 1 </button>
+            <button class="eachButton btn-info" id="eachButton"> Choice 2 </button>
+            <button class="eachButton btn-info" id="eachButton"> Choice 3 </button>
+            <button class="eachButton btn-info" id="eachButton"> Choice 4 </button>
+
+          </div> <!-- #answerButtons -->
+        </div>
+        <div class="clickAction">
+          <button id="startButton" class="start-button btn-primary customButton"> Start Quiz </button>
+          <button id="nextButton" class="next-button btn-info customButton"> Next Question </button>
+          <button id="resetButton" class="reset-button btn-warning customButton"> RESET QUIZ </button>
+        </div>
+
+        <div id="scoreCounter"> 0 </div>
         <p>Total Score will display after all questions are answered or there is no time left. </p>
       </div> <!-- .top-column-2 ends -->
     </div> <!-- .top-row-2 ends -->
