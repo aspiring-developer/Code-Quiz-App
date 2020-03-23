@@ -153,14 +153,6 @@ var allQuestions = [
   ]
 },
 
-
-
-
-
-
-
-
-
 ]
 
 
